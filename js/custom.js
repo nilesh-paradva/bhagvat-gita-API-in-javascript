@@ -18,5 +18,4 @@ const getDeta = () => {
     } else {
         console.log("get data error");
     }
-    
 }
