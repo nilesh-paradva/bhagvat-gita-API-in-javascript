@@ -4,83 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <style>
-        input{
-            outline: none;
-            border: none;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-black h-100">
+<body class="bg-black">
 
-    <div class="modal fade" id="getdata" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade" id="getslockData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
           <div class="modal-content">
-            <div class="modal-body">
-                <div class="col-12">
-                    <div id = "view-data">
-                        <h2 class="h1 text-center"> chapter:- </h2>
-                        <p class="text-center fw-bold fs-5"> verse:- </p>
-                        <p class="fw-bold fs-5"> Hindi translation :- </p>
-                        <p class="fw-bold fs-5 border-bottom"> Author :- </p>
-                        <p class="fw-bold fs-5 border-bottom"> Slok :- </p>
-                        <p class="fw-bold fs-5 border-bottom"> Transliteration :- </p>
-                    </div>
-                </div>
+            <div class="modal-body" id="modal-data">
+              
             </div>
-            <div class="text-center py-2 border-top">
+            <div class="text-center my-3">
               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
-    
-    <section>
-        <main>
-            <div class="container">
+
+    <main>
+        <section>
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 d-flex align-items-center justify-content-center">
-                        <div class="col-7">
-                            <div class="image">
-                                <img src="images/5.jpg" alt="" class="image-fluid">
+                    <div class="col-4">
+                        <div class="sidebar">
+                            <div class="sidebar-header text-center">
+                                <h1 class="fst-italic"><span class="text-success">C</span><span class="text-warning">H</span><span class="text-danger">A</span><span class="text-white">PT</span><span class="text-danger">E</span><span class="text-warning">R</span><span class="text-success">S</span></h1>
+                            </div>
+                            <div class="side-barbody scroll  overflow-y-scroll" style="height: 92vh;">
+                                <div class="data-list p-2">
+                                    <ul class="list-unstyled m-0 p-0" id="data-print"></ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 mt-3">
-                        <div class="get-record-data">
-                            <div class="image p-3 rounded-3" style="background-color: rgba(147, 140, 140, 0.3);">
-                                <form action="">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="chapter-number">
-                                                <label for="ch-number" class="text-white mb-2">Chapter :-</label>
-                                                <input type="text" placeholder="Enter your chapter number" class="w-100 rounded-3 border border-2 px-3 py-2" id="chapter">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6  mb-3">
-                                            <div class="verse-number">
-                                                <label for="verse-number" class="text-white mb-2">Verse :-</label>
-                                                <input type="text" placeholder="Enter your verse number" class="w-100 rounded-3 border border-2 px-3 py-2" id="verse">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="submit text-center">
-                                                <a href="#getdata" data-bs-toggle="modal" class="bg-success px-3 py-2 text-decoration-none text-white d-inline-block rounded-3" onclick="return getDeta()">Click</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                    <div class="col-8">
+                        <div class="slock-data scroll overflow-y-scroll" style="height: 99vh;">
+                            <div class="col-12">
+                                <div class="get-data pe-2" id="chap-data">
+                                </div>
+                                <div class="slok-get me-2" id="verse">
+                                    <!-- <div class="main-box list p-2 border-bottom rounded-3 mb-3" data-bs-target = "#getslockData" data-bs-toggle = "modal" style="cursor: pointer;"></div>
+                                        <h3 style="color: #E2DFD0;"><i class="fa-brands fa-pagelines text-success me-3"></i>Verse ${data.verse}</h3>
+                                        <p style="color: #556d85;" class="fw-bold">${data.siva.et}</p>
+                                    </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-    </section>
+        </section>
+    </main>
 
-
-    <script src="js/custom.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>

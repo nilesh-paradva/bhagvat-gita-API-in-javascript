@@ -1,0 +1,17 @@
+.list{
+    background-color: black;
+    transition: all 0.2s;
+}
+.list:hover{
+    background-color: rgba(68, 66, 66, 0.4);
+}
+.scroll::-webkit-scrollbar{
+    width: 5px;
+    background-color: beige;
+    border-radius: 20px;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 0, 0.6);
+    border-radius: 19px;
+    border: 1px solid black;
+}
