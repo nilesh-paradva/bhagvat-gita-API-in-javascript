@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-black">
-
     <div class="modal fade" id="getslockData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content">
-            <div class="modal-body" id="modal-data">
-              
+          <div class="modal-content bg-black">
+            <div class="modal-body scroll">
+                <div class="container">
+                    <div class="row" id="modal-data">
+                    </div>
+                </div>
             </div>
-            <div class="text-center my-3">
+            <div class="text-center py-3 border-top">
               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
-      </div>
+    </div>
 
     <main>
         <section>
@@ -30,9 +32,10 @@
                     <div class="col-4">
                         <div class="sidebar">
                             <div class="sidebar-header text-center">
-                                <h1 class="fst-italic"><span class="text-success">C</span><span class="text-warning">H</span><span class="text-danger">A</span><span class="text-white">PT</span><span class="text-danger">E</span><span class="text-warning">R</span><span class="text-success">S</span></h1>
+                                <h1 class="fst-italic text-danger">BHAGAVAD GITA API</h1>
+                                <h2 class="fst-italic"><span class="text-success">C</span><span class="text-warning">H</span><span class="text-danger">A</span><span class="text-white">PT</span><span class="text-danger">E</span><span class="text-warning">R</span><span class="text-success">S</span></h2>
                             </div>
-                            <div class="side-barbody scroll  overflow-y-scroll" style="height: 92vh;">
+                            <div class="side-barbody scroll  overflow-y-scroll" style="height: 86vh;">
                                 <div class="data-list p-2">
                                     <ul class="list-unstyled m-0 p-0" id="data-print"></ul>
                                 </div>
@@ -40,15 +43,12 @@
                         </div>
                     </div>
                     <div class="col-8">
-                        <div class="slock-data scroll overflow-y-scroll" style="height: 99vh;">
+                        <div class="slock-data scroll overflow-y-scroll" style="height: 98vh;">
                             <div class="col-12">
                                 <div class="get-data pe-2" id="chap-data">
                                 </div>
                                 <div class="slok-get me-2" id="verse">
-                                    <!-- <div class="main-box list p-2 border-bottom rounded-3 mb-3" data-bs-target = "#getslockData" data-bs-toggle = "modal" style="cursor: pointer;"></div>
-                                        <h3 style="color: #E2DFD0;"><i class="fa-brands fa-pagelines text-success me-3"></i>Verse ${data.verse}</h3>
-                                        <p style="color: #556d85;" class="fw-bold">${data.siva.et}</p>
-                                    </div> -->
+                                    
                                 </div>
                             </div>
                         </div>
@@ -58,7 +58,6 @@
         </section>
     </main>
 
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/custom.js"></script>
 </body>

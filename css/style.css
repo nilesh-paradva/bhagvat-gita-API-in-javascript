@@ -15,3 +15,10 @@
     border-radius: 19px;
     border: 1px solid black;
 }
+.chapter-item.active {
+    background-color: rgba(68, 66, 66, 0.4);
+}
+
+.verse-item.active {
+    background-color: rgba(68, 66, 66, 0.4);
+}
